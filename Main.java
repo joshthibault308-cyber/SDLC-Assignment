@@ -210,7 +210,11 @@ public class Main {
 
                 }
 
-                System.out.println("There was no patron found with that ID, please try again.");
+                if (!done) {
+
+                    System.out.println("There was no patron found with that ID, please try again.");
+                    
+                }
 
             } catch (Exception e) {
 
@@ -281,4 +285,5 @@ public class Main {
             }
         }
     }
+
 }
